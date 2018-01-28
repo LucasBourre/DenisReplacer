@@ -1,0 +1,15 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "icons": { 
+             },
+  "browser_action": {
+  },
+  "permissions": [
+  ],
+  "background": {
+  
+  },
+  "manifest_version": 
+}
