@@ -17,3 +17,27 @@ new Denis("https://www.babelio.com/users/AVT_Denis-Brogniart_7970.jpeg")
 ]
 
 var numberDenis = 14;
+
+
+function Denis(imageurl){
+  this.imageurl = imageurl;
+}
+
+
+
+ function Randomize(numberDenis){
+    return Math.floor(Math.random() * numberDenis)
+ }
+
+
+           
+(function (document) {
+  var images = document.getElementsByTagName('img'), length = images.length
+ 
+  for (var i = 0; i < length; i++) {
+	var number = Randomize(numberDenis);
+    var img = myDenis[number];
+    images[i].src = img.imageurl
+  }
+
+})(document);

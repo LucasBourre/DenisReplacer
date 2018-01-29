@@ -13,9 +13,12 @@
   "permissions": [
     "activeTab"
   ],
-  "background": {
-    "scripts": ["background.js", "denisReplacer.js"],
-    "persistent": false
-  },
+  "content_scripts" : [
+   {
+     "js": ["denisReplacer.js"],
+     "matches": ["*://*/*"]
+   }
+],
+
   "manifest_version": 2
 }
